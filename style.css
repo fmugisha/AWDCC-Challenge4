@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(235, 21%, 11%);
+    display: flex;
+    justify-content: center;
+}
+.top-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    z-index: -1;
+}
+.top-background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.main-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 30px;
+    margin-top: 100px;
+}
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.new-todo-div {
+    background-color: hsl(235, 24%, 19%);
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 50px;
+}
+.check-div {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-mark {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: solid 2px hsl(237, 14%, 26%);
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-mark:hover {
+    background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%) 100%);
+}
+.new-todo-input-div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.new-todo-input-div form {
+    flex-grow: 1;
+}
+.new-todo-input-div input {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.new-todo-input-div input::placeholder {
+    color: hsl(233, 14%, 35%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.todo-items-container {
+    margin-top: 30px;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 30px 0 rgba(0,0,0,0.4);
+}
+.todo-item {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color: hsl(235, 24%, 19%);
+    border-bottom: solid 1px hsl(237, 14%, 26%); 
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.25s ease;
+    display: flex;
+    cursor: pointer;
+}
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 7px 0 hsl(235, 21%, 11%);
+    border-color: hsl(235, 24%, 19%);
+}
+.todo-text {
+    display: flex;
+    align-items: center;
+}
+.todo-items-info {
+    height: 70px;
+    width: 100%;
+    color: hsl(233, 14%, 35%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+.items-statuses {
+    display: flex;
+    justify-content: center;
+}
+.items-statuses span {
+    padding: 0 10px;
+    cursor: pointer;
+}
+.items-statuses span:nth-child(1) {
+    color: hsl(220, 98%, 61%);
+}
+.items-statuses span:hover, .items-clear:hover {
+    color: #fff;
+}
+.items-clear {
+    cursor: pointer;
+    text-align: end;
+}

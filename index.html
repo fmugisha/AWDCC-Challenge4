@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+    <script src="./site.js"></script>
+    <title>Challenge4</title>
+</head>
+<body>
+    <div class="top-background-image" id="dark-image">
+        <img src="images/bg-desktop-dark.jpg" alt="">
+    </div>
+    <div class="main-container">
+        <div class="header-div">
+            <div class="title">TODO</div>
+            <div class="theme-div">
+                <img src="images/icon-sun.svg" alt="Go light mode">
+            </div>
+        </div>
+        <div class="new-todo-div">
+            <div class="check-div">
+                <div class="check-mark"></div>
+            </div>
+            <div class="new-todo-input-div">
+                <form onsubmit="addItem(event)">
+                    <input id="todo-input" type="text" placeholder="Creat a new todo...">
+                </form>
+            </div>
+        </div>
+        <div class="todo-items-container">
+            <div class="todo-items">
+                <div class="todo-item">
+                    <div class="check-div">
+                        <div class="check-mark">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">Cut the lawn</div>
+                </div>
+                <div class="todo-item">
+                    <div class="check-div">
+                        <div class="check-mark">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">Cut the lawn</div>
+                </div>
+                <div class="todo-item">
+                    <div class="check-div">
+                        <div class="check-mark">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">Cut the lawn</div>
+                </div>
+                <div class="todo-item">
+                    <div class="check-div">
+                        <div class="check-mark">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">Cut the lawn</div>
+                </div>
+                <div class="todo-item">
+                    <div class="check-div">
+                        <div class="check-mark">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">Cut the lawn</div>
+                </div>
+                <div class="todo-item">
+                    <div class="check-div">
+                        <div class="check-mark">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">Cut the lawn</div>
+                </div>
+            </div>
+            <div class="todo-items-info">
+                <div class="items-left">5 items left</div>
+                <div class="items-statuses">
+                    <span>All</span>
+                    <span>Active</span>
+                    <span>Completed</span>
+                </div>
+                <div class="items-clear">
+                    <span>Clear Completed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
